@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for entry in entry_list %}
+        {% include "_entry.html" with entry=entry only %}
+    {% empty %}
+        <p>No blog entries yet.</p>
+    {% endfor %}
+{% endblock content %}
+{% block about %}
+            <h3>About</h3>
+            <p>Wraeclast: the land of the damned. This forsaken continent is home to many writhing horrors, murderous beasts, and ravenous undead. The very soil is permeated with dark, ancient power, the earth shivering with malice. The dead are refused peace, rising up and hopelessly wandering in eternal pain, sorrow and hunger. The wildlife is twisted and misshapen, unnaturally aggressive and savage. Lurking in the darkest of corners, unspeakable horrors lie in wait for unsuspecting prey, eager to rip apart the mind as well as the flesh. Wraeclast is a place where few remain alive, and fewer remain sane. </p> 
+{% endblock about %}
+
+ 
